@@ -1,0 +1,55 @@
+* {
+box-sizing: border-box;
+}
+body {
+	background-color: #ccc;
+	text-align: center;
+
+}
+header, footer {
+	margin: 15px;
+}
+
+header {
+	background-color: #1ff;
+	outline: 1px solid black;
+	height: 60px;
+	
+}
+.menubar {
+	background-color: lightblue;
+	float: left;
+	outline: 1px solid black;
+	width: 20%;
+	height: 400px; 
+}
+.newsbar {
+	background-color: lightblue;
+	float: right;
+	outline: 1px solid black;
+	width: 20%;
+	height: 400px;
+}
+.menubar,.newsbar {
+	margin: 0 15px;
+}
+.content {
+	background-color: red;
+	outline: 1px solid rgba(1, 1, 1,.9);
+	width: auto;
+	overflow: hidden;
+	height: 400px; 
+
+	
+	
+	/*height: 400px;
+*/
+
+}
+
+footer {
+	background-color: green;
+	outline: 1px solid black;
+	height: 60px;
+
+}
