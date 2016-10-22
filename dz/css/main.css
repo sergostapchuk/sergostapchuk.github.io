@@ -1,0 +1,45 @@
+.main_square {
+	background-color: #3E5B96;
+	width: 350px;
+	height: 350px;
+	position: relative;
+	margin-left: 40%;
+	margin-top: 20px;
+}
+.square {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background-color: #963E40;
+	
+}
+.second {
+	right: 0;
+}
+.third {
+	bottom: 0;
+	left: 0;
+}
+.fourth {
+	bottom: 0;
+	right: 0;
+}
+.first2{
+	left: 0;
+	margin-left: -100px;
+
+}
+.second2 {
+	right: 0;
+	margin-right: -100px;
+}
+.third2 {
+	bottom: 0;
+	left: 0;
+	margin-left: -100px;
+}
+.fourth2 {
+	bottom: 0;
+	right: 0;
+	margin-right: -100px;
+}
