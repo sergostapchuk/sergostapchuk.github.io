@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+}
+font-family: Nexa Bold;
+src: url("font/Nexa Bold.otf") format("opentype");
+}
+@font-face {
+font-family: Nexa Light;
+src: url("font/Nexa Light.otf") format("opentype");
+}
+body {
+	background: #ffffff;
+}
+h1 {
+	font-family: Nexa Light, sans-serif;
+	font-size: 60px;
+	font-weight: lighter;
+}
+.home {
+	/*position: relative;*/
+	background: url(../img/bg.jpg) no-repeat center top;
+	background-size: 100%;
+	background-attachment: local;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column;
+}
+a {
+	text-decoration: none;
+}
+.nav {
+	margin: 0 auto;
+	padding: 2%;
+	border-bottom: 1px solid #f1f1f1;
+	border-width: 200%;
+	
+}
+.nav a {
+	padding: 40px;
+	color: #f1f1f1;
+	font-family: Nexa Light, sans-serif;
+}
+.logo {
+	align-self: center;
+	/*display: block;*/
+	
+}
+.logo__trademark img{
+	margin: 5% 40%;
+}
+.logo__text {
+	/*padding-left:  25%; */
+	color: #f1f1f1;
+	font-family: Nexa Light, sans-serif;
+	font-size: 60px;
+	
+}
+.logo__text span { 
+	font-family: Nexa Bold, sans-serif;
+ }
+ .scrollbtn {
+ 	align-self: center;
+	padding-bottom: 100px;
+ }
+ .scrollbtn a{
+ 	color:#f1f1f1;
+ 	font-family: Nexa Bold, sans-serif;
+ 	font-size: 18px;
+ 	display: -webkit-flex;
+ 	display: -moz-flex;
+ 	display: -ms-flex;
+ 	display: -o-flex;
+ 	display: flex;
+ 	flex-flow: column wrap;
+ }
+.icon {
+ 	order: 1;
+ 	
+ 	
+  color: #f1f1f1;
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 24px;
+  height:24px;
+  border-bottom: solid 2px currentColor;
+  border-left: solid 2px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.icon1 {
+	
+	order: 2;
+	
+  	color: #f1f1f1;
+	position: absolute;
+    margin-left: 4px;
+    margin-top: 4px;
+    width: 24px;
+    height:24px;
+    border-bottom: solid 2px currentColor;
+    border-left: solid 2px currentColor;
+    -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.about-me-page {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.about-me-page p {
+	
+	align-self:flex-start; 
+}
+
+.about-me-page.about-me__photo {
+	
+	align-self: flex-start;
+}
+..about-me-page h1 {
+	display: inline;
+	align-self: center;
+	color: #202020;
+	font-family: Nexa Light, sans-serif;
+	font-size: 60px;
+	
+}
