@@ -1,26 +1,52 @@
 * {
 	box-sizing: border-box;
 }
-font-family: Nexa Bold;
-src: url("font/Nexa Bold.otf") format("opentype");
+@font-face {
+	font-family: Nexa Bold;
+	src: url("font/Nexa Bold.otf") format("opentype");
 }
 @font-face {
-font-family: Nexa Light;
-src: url("font/Nexa Light.otf") format("opentype");
+	font-family: Nexa Light;
+	src: url("font/Nexa Light.otf") format("opentype");
 }
 body {
 	background: #ffffff;
 }
-h1 {
+h2, name {
 	font-family: Nexa Light, sans-serif;
 	font-size: 60px;
 	font-weight: lighter;
 }
-.home {
-	/*position: relative;*/
+.page {
+	width: 100%;
+	height: 100vh;
+	background-size: cover ;
+	padding-bottom: 55%;
+}
+.page.first{
 	background: url(../img/bg.jpg) no-repeat center top;
-	background-size: 100%;
-	background-attachment: local;
+}
+a {
+	text-decoration: none;
+}
+.main-nav {
+	margin: 0 40px;
+	padding: 1%;
+	
+	text-align: center;
+		
+}
+.main-nav.first {
+	border-bottom: 1px solid #ccc;
+}
+.main-nav a {
+	padding: 40px;
+	color: #ccc;
+	font-family: Nexa Light, sans-serif;
+	font-size: 24px;
+
+}
+.main{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -28,61 +54,45 @@ h1 {
 	display: flex;
 	flex-flow: column;
 }
-a {
-	text-decoration: none;
-}
-.nav {
-	margin: 0 auto;
-	padding: 2%;
-	border-bottom: 1px solid #f1f1f1;
-	border-width: 200%;
-	
-}
-.nav a {
-	padding: 40px;
-	color: #f1f1f1;
-	font-family: Nexa Light, sans-serif;
-}
 .logo {
 	align-self: center;
 	/*display: block;*/
 	
 }
-.logo__trademark img{
-	margin: 5% 40%;
+.logo__trademark {
+	margin: 40px auto;
+	background-image: url(../img/tm.png);
+	/*background-position: center center;*/
+	background-size: cover;
+	width: 50%;
+	padding-bottom: 50%;
+
 }
 .logo__text {
-	/*padding-left:  25%; */
+	/*padding-le]  ft:  25%; */
 	color: #f1f1f1;
 	font-family: Nexa Light, sans-serif;
 	font-size: 60px;
-	
+	padding-bottom: -30px;
 }
 .logo__text span { 
 	font-family: Nexa Bold, sans-serif;
  }
  .scrollbtn {
  	align-self: center;
-	padding-bottom: 100px;
+	padding-bottom: 150px;
  }
- .scrollbtn a{
+.scrollbtn a{
  	color:#f1f1f1;
  	font-family: Nexa Bold, sans-serif;
  	font-size: 18px;
- 	display: -webkit-flex;
- 	display: -moz-flex;
- 	display: -ms-flex;
- 	display: -o-flex;
- 	display: flex;
- 	flex-flow: column wrap;
+ 	
+ 	
  }
 .icon {
- 	order: 1;
- 	
- 	
   color: #f1f1f1;
   position: absolute;
-  margin-left: 4px;
+  margin-left: 85px;
   margin-top: 4px;
   width: 24px;
   height:24px;
@@ -92,13 +102,10 @@ a {
           transform: rotate(-45deg);
 }
 .icon1 {
-	
-	order: 2;
-	
-  	color: #f1f1f1;
+	color: #f1f1f1;
 	position: absolute;
-    margin-left: 4px;
-    margin-top: 4px;
+    margin-left: 85px;
+    margin-top: 18px;
     width: 24px;
     height:24px;
     border-bottom: solid 2px currentColor;
@@ -106,29 +113,69 @@ a {
     -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.about-me-page {
+.about-me {
+	position: relative;
+	margin: 0 auto;
+	width: 93%;
+	padding-bottom: 50%;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	flex-flow: row wrap;
 	justify-content: space-around;
 }
-.about-me-page p {
+.about-me__photo {
+	margin: 3% 0  0 1%;
+	padding-right: 50px;
 	
-	align-self:flex-start; 
+	/*padding-bottom: 35%;
+	background: url(../img/jason-wood.jpg);
+	background-size: cover;
+	background-position: center center;*/
 }
-
-.about-me-page.about-me__photo {
-	
-	align-self: flex-start;
-}
-..about-me-page h1 {
-	display: inline;
-	align-self: center;
+.about-me__description h2{
 	color: #202020;
+	letter-spacing: 3px;
+	padding-top: 13%;
+}
+.about-me__description p{
+	color: #202020;
+	font-family: Open Sans, sans-serif;
+	font-size: 24px;
+}
+.about-me__description h3{
+	color: #202020;
+	font-family: Felt Tip Woman, sans-serif;
+	font-size: 36px;
+}
+.scrollbtn2 {
+	align-self: flex-end;
+}	
+.scrollbtn2 a{ 
+	color: #ccc;
+	margin-top: 90vh;
+	
+}
+.third h2 {
+	/*margin: 0 auto;*/
+	text-align: center;
+}
+.contacts-data h4{
+	text-align: center;
+	font-family: Nexa Bold, sans-serif;
+	font-size: 30px;
+	color: #202020;
+}
+.contacts-data h2{
+	text-align: center;
 	font-family: Nexa Light, sans-serif;
 	font-size: 60px;
-	
+	color: #202020;
+}
+.contacts-data.phone h2 {
+	font-size: 48px;
+}
+.social  {
+	padding-left: 45%;
 }
