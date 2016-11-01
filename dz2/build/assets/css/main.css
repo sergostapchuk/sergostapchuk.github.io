@@ -429,7 +429,7 @@ h2, name {
   padding-bottom: 55%; }
 
 .page.first {
-  background: url(../../../../img/bg.jpg) no-repeat center top; }
+  background: url(../../../img/bg.jpg) no-repeat center top; }
 
 a {
   text-decoration: none; }
@@ -465,7 +465,7 @@ a {
 
 .logo__trademark {
   margin: 40px auto;
-  background-image: url(../../../../img/tm.png);
+  background-image: url(../../../img/tm.png);
   background-size: cover;
   width: 50%;
   padding-bottom: 50%; }
@@ -541,7 +541,7 @@ a {
   margin-top: -5px; }
 
 .third {
-  background: url(../../../../img/bg_portfolio.jpg) no-repeat center top; }
+  background: url(../../../img/bg_portfolio.jpg) no-repeat center top; }
 
 .third h2 {
   color: #f1f1f1;
