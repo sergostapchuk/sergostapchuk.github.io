@@ -1,0 +1,228 @@
+@import 'normalize';
+* {
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: Nexa Bold;
+	src: url("font/Nexa Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: Nexa Light;
+	src: url("font/Nexa Light.otf") format("opentype");
+}
+body {
+	background: #ffffff;
+	overflow-x: hidden;
+
+}
+h2, name {
+	font-family: Nexa Light, sans-serif;
+	font-size: 60px;
+	font-weight: lighter;
+}
+.page {
+	width: 100%;
+	height: 100vh;
+	background-size: cover ;
+	padding-bottom: 55%;
+}
+.page.first{
+	background: url(../../../../img/bg.jpg) no-repeat center top;
+}
+a {
+	text-decoration: none;
+}
+.main-nav {
+	margin: 0 40px;
+	padding: 1%;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+		
+}
+.main-nav.first {
+	border-bottom: 1px solid #ccc;
+}
+.main-nav a {
+	padding: 40px;
+	color: #ccc;
+	font-family: Nexa Light, sans-serif;
+	font-size: 24px;
+
+}
+.main{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column;
+}
+.logo {
+	align-self: center;
+	
+	
+}
+.logo__trademark {
+	margin: 40px auto;
+	background-image: url(../../../../img/tm.png);
+	
+	background-size: cover;
+	width: 50%;
+	padding-bottom: 50%;
+
+}
+.logo__text {
+	color: #f1f1f1;
+	font-family: Nexa Light, sans-serif;
+	font-size: 60px;
+	padding-bottom: -30px;
+}
+.logo__text span { 
+	font-family: Nexa Bold, sans-serif;
+ }
+ .scrollbtn {
+	color: #ccc;
+	text-transform: uppercase;
+	text-align: center;
+}
+.scrollbtn a{
+ 	color:#f1f1f1;
+ 	font-family: Nexa Bold, sans-serif;
+ 	font-size: 18px;
+ 	
+ 	
+ }
+// .icon {
+//   color: #ccc;
+//   margin-left: 330px;
+//   margin-top: 22px;
+//   width: 24px;
+//   height:24px;
+//   border-bottom: solid 2px currentColor;
+//   border-left: solid 2px currentColor;
+//   -webkit-transform: rotate(-45deg);
+//           transform: rotate(-45deg);
+// }
+// .icon1 {
+// 	color: #ccc;
+// 	margin-left: 330px;
+//     margin-top: -3px;
+//     width: 24px;
+//     height:24px;
+//     border-bottom: solid 2px currentColor;
+//     border-left: solid 2px currentColor;
+//     -webkit-transform: rotate(-45deg);
+//           transform: rotate(-45deg);
+// }
+
+.about-me {
+	margin: 0 auto;
+	width: 93%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+}
+.about-me__photo {
+	margin: 3% 0  0% 1%;
+	padding-right: 50px;
+	max-width: 650px;
+	
+}
+.about-me__description h2{
+	color: #202020;
+	letter-spacing: 3px;
+	padding-top: 13%;
+}
+.about-me__description p{
+	color: #202020;
+	font-family: Open Sans, sans-serif;
+	font-size: 24px;
+}
+.about-me__description h3{
+	color: #202020;
+	font-family: Felt Tip Woman, sans-serif;
+	font-size: 36px;
+}
+ .scrollbtn2 , .scrollbtn3 {
+	padding: 50px auto;
+	color: #ccc;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	
+}	
+.icon1,.icon2,.icon3, .icon4, .icon5, .icon6 { 
+  color: #ccc;
+  margin-left: 48%;
+  margin-top: 4px;
+  width: 24px;
+  height:24px;
+  border-bottom: solid 2px currentColor;
+  border-left: solid 2px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+	
+}
+
+.icon2,.icon4, .icon6 {
+	margin-top: -5px;
+}
+.third {
+	background: url(../../../../img/bg_portfolio.jpg) no-repeat center top;
+
+}
+
+ // BEGIN PORTFOLIO 
+.third h2 {
+	color: #f1f1f1;
+	text-align: center;
+	margin: 0;
+	
+}
+.portfolio_5,.portfolio_10 {
+	display: flex;
+	flex-flow: row nowrap; 
+	justify-content: center;
+
+	& img{
+		margin: 5px;
+		max-width: 250px;
+	}
+	& img:hover {
+		border: 2px solid yellow;
+	}
+}
+.contacts-data-wrap{
+	padding-top: 2%;
+}
+.contacts-data h4{
+	text-align: center;
+	font-family: Nexa Bold, sans-serif;
+	font-size: 30px;
+	color: #202020;
+}
+.contacts-data h2{
+	text-align: center;
+	font-family: Nexa Light, sans-serif;
+	font-size: 60px;
+	color: #202020;
+}
+.contacts-data.phone h2 {
+	font-size: 48px;
+}
+.social  {
+	padding-left: 39%;
+	& img {
+		padding-left: 25px;
+	}
+}
+.footer {
+	border-top: 1px solid #bebebe;
+	color: #bebebe;
+	& h4 {
+		text-align: center;
+	}
+}
