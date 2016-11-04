@@ -1,0 +1,38 @@
+@import 'font';
+@import 'variables';
+@import 'normalize';
+
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none
+}
+
+.section--first {
+	background-image: url(img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+
+}
+.nav-home {
+	align-self: center;
+	a{
+		display: inline-block;
+		color: #ccc;
+	}
+}
+.logo {
+	align-self: center;
+	img: {
+		max-height: 40%;
+		max-width: 40%;
+		width: auto;
+  		height: 50vh;
+	}
+}
