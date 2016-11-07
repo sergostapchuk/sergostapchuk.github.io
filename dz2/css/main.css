@@ -1,22 +1,23 @@
-<<<<<<< HEAD
 @font-face {
   font-family: NexaBold;
+  src: url("font/NexaBold.woff") format("woff");
   src: url("font/NexaBold.otf") format("opentype"); }
 
 @font-face {
   font-family: NexaLight;
+  src: url("font/NexaLight.woff") format("woff");
   src: url("font/NexaLight.otf") format("opentype"); }
 
 @font-face {
   font-family: OpenSans-Light;
+  src: url("font/OpenSans-Light.woff") format("woff");
   src: url("font/OpenSans-Light.ttf") format("truetype"); }
 
 @font-face {
   font-family: FeltTipWoman;
+  src: url("font/FeltTipWoman.woff") format("truetype");
   src: url("font/FeltTipWoman.ttf") format("truetype"); }
 
-=======
->>>>>>> 9aa3a12f3028fff215918058bfb0c68e636d4078
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -424,12 +425,43 @@ template {
 * {
   box-sizing: border-box; }
 
-<<<<<<< HEAD
 a {
   text-decoration: none; }
 
-.section--first {
-  background-image: url(img/bg.jpg);
+.nav-main {
+  text-align: center;
+  border-bottom: 1px solid #bebebe;
+  margin: 0 20px;
+  padding: 10px 0; }
+  .nav-main a {
+    font-family: NexaLight, sans-serif;
+    color: #bebebe;
+    padding-right: 40px;
+    font-size: 24px; }
+
+.nav-white {
+  border-color: #f1f1f1; }
+  .nav-white a {
+    color: #f1f1f1; }
+
+.scrollbtn {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.scrollbtn a {
+  color: #f1f1f1;
+  font-family: NexaBold, sans-serif;
+  font-size: 18px; }
+
+.scrollbtn.general a {
+  color: #bebebe; }
+
+.section {
+  height: 100vh; }
+
+.section--home {
+  background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -438,168 +470,72 @@ a {
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
-      justify-content: space-between;
-  height: 100vh; }
-
-.nav-home {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; }
-  .nav-home a {
-    display: inline-block;
-    color: #ccc; }
+      justify-content: space-between; }
 
 .logo {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  img-max-height: 40%;
-  img-max-width: 40%;
-  img-width: auto;
-  img-height: 50vh; }
-=======
-@font-face {
-  font-family: Nexa Bold;
-  src: url("font/Nexa Bold.otf") format("opentype"); }
-
-@font-face {
-  font-family: Nexa Light;
-  src: url("font/Nexa Light.otf") format("opentype"); }
-
-body {
-  background: #ffffff;
-  overflow-x: hidden; }
-
-h2, name {
-  font-family: Nexa Light, sans-serif;
-  font-size: 60px;
-  font-weight: lighter; }
-
-.page {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  padding-bottom: 55%; }
-
-.page.first {
-  background: url(../../../../img/bg.jpg) no-repeat center top; }
-
-a {
-  text-decoration: none; }
-
-.main-nav {
-  margin: 0 40px;
-  padding: 1%;
-  border-bottom: 1px solid #ccc;
-  text-align: center; }
-
-.main-nav.first {
-  border-bottom: 1px solid #ccc; }
-
-.main-nav a {
-  padding: 40px;
-  color: #ccc;
-  font-family: Nexa Light, sans-serif;
-  font-size: 24px; }
-
-.main {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column; }
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .logo img {
+    margin-top: 30px;
+    width: 30%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+  .logo h1 {
+    font-family: NexaLight, sans-serif;
+    font-size: 3em;
+    font-weight: lighter;
+    color: #f1f1f1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+    .logo h1 span {
+      font-family: NexaBold, sans-serif; }
 
-.logo {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; }
-
-.logo__trademark {
-  margin: 40px auto;
-  background-image: url(../../../../img/tm.png);
-  background-size: cover;
-  width: 50%;
-  padding-bottom: 50%; }
-
-.logo__text {
-  color: #f1f1f1;
-  font-family: Nexa Light, sans-serif;
-  font-size: 60px;
-  padding-bottom: -30px; }
-
-.logo__text span {
-  font-family: Nexa Bold, sans-serif; }
-
-.scrollbtn {
-  color: #ccc;
-  text-transform: uppercase;
-  text-align: center; }
-
-.scrollbtn a {
-  color: #f1f1f1;
-  font-family: Nexa Bold, sans-serif;
-  font-size: 18px; }
-
-.about-me {
-  margin: 0 auto;
-  width: 93%;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+.about-me-wrap {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-direction: row wrap;
+      flex-direction: row wrap;
+  padding: 20px 30px 0 30px; }
 
 .about-me__photo {
-  margin: 3% 0  0% 1%;
-  padding-right: 50px;
-  max-width: 650px; }
+  padding: 0px 30px 10px 30px;
+  width: 100%;
+  -ms-flex: 1 200%;
+      flex: 1 200%; }
+  .about-me__photo img {
+    max-width: 100%;
+    max-height: 100%; }
 
-.about-me__description h2 {
-  color: #202020;
-  letter-spacing: 3px;
-  padding-top: 13%; }
+.about-me__description {
+  color: #202020; }
+  .about-me__description h2 {
+    font-family: NexaLight, sans-serif;
+    font-size: 3em;
+    font-weight: lighter;
+    margin: 20px 0; }
+  .about-me__description p {
+    font-family: OpenSans-Light, sans-serif;
+    line-height: 30px;
+    padding-right: 30px;
+    font-size: 1em; }
+  .about-me__description h3 {
+    font-family: FeltTipWoman, sans-serif;
+    font-size: 36px; }
 
-.about-me__description p {
-  color: #202020;
-  font-family: Open Sans, sans-serif;
-  font-size: 24px; }
+.portfolio {
+  background: url(../img/bg_portfolio.jpg) no-repeat center top; }
 
-.about-me__description h3 {
-  color: #202020;
-  font-family: Felt Tip Woman, sans-serif;
-  font-size: 36px; }
-
-.scrollbtn2, .scrollbtn3 {
-  padding: 50px auto;
-  color: #ccc;
-  display: block;
-  text-align: center;
-  text-transform: uppercase; }
-
-.icon1, .icon2, .icon3, .icon4, .icon5, .icon6 {
-  color: #ccc;
-  margin-left: 48%;
-  margin-top: 4px;
-  width: 24px;
-  height: 24px;
-  border-bottom: solid 2px currentColor;
-  border-left: solid 2px currentColor;
-  transform: rotate(-45deg); }
-
-.icon2, .icon4, .icon6 {
-  margin-top: -5px; }
-
-.third {
-  background: url(../../../../img/bg_portfolio.jpg) no-repeat center top; }
-
-.third h2 {
+.portfolio h2 {
   color: #f1f1f1;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  font-family: NexaLight, sans-serif;
+  font-size: 3em;
+  padding: 20px auto; }
 
 .portfolio_5, .portfolio_10 {
   display: -ms-flexbox;
@@ -607,41 +543,46 @@ a {
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  overflow: hidden; }
   .portfolio_5 img, .portfolio_10 img {
     margin: 5px;
-    max-width: 250px; }
+    width: 18vw;
+    max-width: 180px; }
   .portfolio_5 img:hover, .portfolio_10 img:hover {
-    border: 2px solid yellow; }
+    outline: 2px solid yellow; }
 
-.contacts-data-wrap {
-  padding-top: 2%; }
+.contact {
+  position: relative; }
+
+.contacts-data h4, .contacts-data h2, .contacts-data a {
+  text-align: center;
+  color: #202020;
+  text-transform: uppercase; }
 
 .contacts-data h4 {
-  text-align: center;
-  font-family: Nexa Bold, sans-serif;
-  font-size: 30px;
-  color: #202020; }
+  font-family: NexaBold, sans-serif;
+  font-size: 30px; }
 
 .contacts-data h2 {
-  text-align: center;
-  font-family: Nexa Light, sans-serif;
-  font-size: 60px;
-  color: #202020; }
-
-.contacts-data.phone h2 {
-  font-size: 48px; }
+  font-family: NexaLight, sans-serif;
+  font-size: 48px;
+  font-weight: lighter; }
 
 .social {
-  padding-left: 39%; }
+  text-align: center; }
   .social img {
-    padding-left: 25px; }
+    display: inline-block;
+    margin: 0 auto; }
 
 .footer {
+  color: #bebebe;
+  text-align: center;
   border-top: 1px solid #bebebe;
-  color: #bebebe; }
-  .footer h4 {
-    text-align: center; }
->>>>>>> 9aa3a12f3028fff215918058bfb0c68e636d4078
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

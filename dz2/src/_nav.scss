@@ -1,0 +1,18 @@
+.nav-main {
+	text-align: center;
+	border-bottom: 1px solid $grey;
+	margin: 0 20px;
+	padding: 10px 0;
+	a{
+		font-family: $font-light;
+		color: $grey;
+		padding-right: 40px;
+		font-size: 24px;
+	}
+}
+.nav-white {
+	border-color: $white;
+	 a{
+		color: $white;
+	}
+}

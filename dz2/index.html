@@ -3,44 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	<link rel="stylesheet" href="build/assets/css/main.css">
+	<link rel="stylesheet" href="_build/assets/css/main.css">
+	<!-- <link rel="stylesheet" href="css/main.css"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
 
 			<!--BEGIN HOME -->
 
-	<div id="home" class="section section--first">
-		<nav class="nav-home">
+	<div id="home" class="section section--home">
+		<nav class="nav-main nav-white">
 			<a href="#home">HOME</a>
-			<a href="#about-me-page">ABOUT ME</a>
+			<a href="#about-me">ABOUT ME</a>
 			<a href="#portfolio">PORTFOLIO</a>
 			<a href="#contacts">CONTACT</a>
 		</nav>
+		
 		<div class="logo">
-			
 			<img src="img/tm.png" alt="logo">
 			<h1><span>JWOOD</span>PHOTOGRAPHY</h1>
 		</div>
 		<div class="scrollbtn">
-			<a href="#about-me-page">scroll down to see </a>
+			<a href="#about-me">scroll down to see more
+					<br><br><img src="img/double-arrow-grey.png" alt="scroll down to see more button">
+				 </a>
+			</a>
 		</div>
 	</div>
 			
 			<!--END HOME -->
 
 			<!--BEGIN ABOUT ME -->
-	<div id="about-me-page">	
-			<div class="page second">		
-				<nav class="main-nav second">
+	<div id="about-me" class="section about-me">	
+				
+				<nav class="nav-main">
 					<a href="#home">HOME</a>
-					<a href="#about-me-page">ABOUT ME</a>
+					<a href="#about-me">ABOUT ME</a>
 					<a href="#portfolio">PORTFOLIO</a>
 					<a href="#contacts">CONTACT</a>
 				</nav>
-				<div class="about-me">
 				
-					<div ><img src="img/jason-wood.jpg" alt="" class="about-me__photo"></div>
+				<div class="about-me-wrap">
+					<div class="about-me__photo"><img src="img/jason-wood.jpg" alt="jason-wood.jpg" ></div>
 
 					<div class="about-me__description">
 						<h2>ABOUT ME</h2>
@@ -52,27 +56,29 @@
 					</div>
 					
 				 </div>
-				 <div><a href="#portfolio" class="scrollbtn2">keep scrolling, there is still more to come.
-					<div class="scroll icon3"></div>
-					<div class="scroll icon4"></div>
+				 <div class="scrollbtn general"><a href="#portfolio" >keep scrolling, there is still more to come.
+				<br><br>
+				<img src="img/double-arrow.png" alt="">	
 				 </a>
-				 </div>
-			 </div>
+				 
+			 
 		</div>
 
 			<!-- END ABOUT ME -->
 
 			<!-- BEGIN PORTFOLIO -->
 		
-	<div id="portfolio">
-			<div class="page third">
-				<nav class="main-nav">
+	<div id="portfolio" class="section portfolio">
+			
+				<nav class="nav-main  nav-white">
 					<a href="#home">HOME</a>
-					<a href="#about-me-page">ABOUT ME</a>
+					<a href="#about-me">ABOUT ME</a>
 					<a href="#portfolio">PORTFOLIO</a>
 					<a href="#contacts">CONTACT</a>
 				</nav>
+				<br>
 				<h2>PORTFOLIO</h2>
+				<br>
 				<div class="portfolio_5">
 					<a href="img/big01.jpg"><img src="img/01.jpg" alt=""></a>
 					<a href="img/big02.jpg"><img src="img/02.jpg" alt=""></a>
@@ -87,41 +93,45 @@
 					<a href="img/big09.jpg"><img src="img/09.jpg" alt=""></a>
 					<a href="img/big10.jpg"><img src="img/10.jpg" alt=""></a>
 				</div>
-				<div ><a href="#contacts" class="scrollbtn3">do you want to see it with your own eyes? Scroll!
-					<div class="scroll icon5"></div>
-					<div class="scroll icon6"></div>
-				</a></div>
-			</div>
+				<br><br>
+				<div class="scrollbtn">
+					<a href="#contacts" >do you want to see it with your own eyes? Scroll!
+					<br><br>
+					<img src="img/double-arrow-grey.png" alt="scroll down to see more button">
+					</a>
+				</div>
+			
 		</div>	
 			<!-- END PORTFOLIO -->
 			
 			<!--BEGIN CONTACTS -->
-	<div id="contacts">
-			<div class="page fourth">
-				<nav class="main-nav">
+	<div id="contacts" class="section contact">
+			
+				<nav class="nav-main">
 					<a href="#home">HOME</a>
-					<a href="#about-me-page">ABOUT ME</a>
+					<a href="#about-me">ABOUT ME</a>
 					<a href="#portfolio">PORTFOLIO</a>
 					<a href="#contacts">CONTACT</a>
 				</nav>
-			<div class="contacts-data-wrap">
-				<div class="contacts-data">
+			<div class="contacts-data wrap">
+				
 				<h4>Mail:</h4>
-				<h2>Jason@wood.com</h2>
-				</div>
-				<div class="contacts-data phone"><h4>phone:</h4>
-				<h2>+44 212 432 444</h2>
-				</div>
-				<div class="contacts-data "><h4>social media:</h4>
+				<a href="mailto:"><h2 >Jason@wood.com</h2></a>
+				
+				<h4>phone:</h4>
+				<a href="tel:+44212432444"><h2>+44 212 432 444</h2></a>
+				
+				<h4>social media:</h4>
 				<div class="social">
 				<a href="#"><img src="img/fb.png" alt=""></a>
 				<a href="#"><img src="img/tw.png" alt=""></a>
 				<a href="#"><img src="img/instagram.png" alt=""></a>
 				</div>
-				</div>
+
+				
 
 			</div>
-			</div>
-		</div>	
-		<div class="footer"><h4>DESIGNED BY</h4> </div>
+			
+		<div class="footer"><h4>DESIGNED BY Pawel szymankiewicz</h4> </div>
+	</div>	
 			<!--END CONTACTS -->
