@@ -1,7 +1,5 @@
-_dz2/*
-dz2/node_modules/*
+eg1/node_modules/*
+eg2/node_modules/*
 *.txt
-dz2/sass/*
-_build/*
-dz3/node_modules/*
-hlam/*
+
+

@@ -1,0 +1,152 @@
+
+.section {
+	height: 100vh;
+
+}
+.section--home {
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	
+
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	
+	
+
+	img {
+		margin-top: 30px;
+		width: 30%;
+		align-self: center;
+	}
+	h1 {
+		font-family: $font-light;
+		font-size: 3em;
+		font-weight: lighter;
+		color: $white;
+		align-self: center;
+
+
+		span {
+			font-family: $font-bold;	
+		}
+	}
+
+}
+
+
+
+.about-me-wrap {
+	display: flex;
+	flex-direction: row wrap;
+	padding: 20px 30px 0 30px;
+
+}
+.about-me__photo {
+	padding: 0px 30px 10px 30px;
+	width: 100%;
+	flex: 1 200%;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+.about-me__description {
+	color: $black;
+	h2 {
+		font-family: $font-light;
+		font-size: 3em;
+		font-weight: lighter;
+		margin: 20px 0;
+	}
+	p {
+		font-family: $font-open;
+	    line-height: 30px;
+	    padding-right: 30px;
+	    font-size: 1em; 
+	}
+	h3 {
+		font-family: $font-felttipwoman;
+		font-size: 36px;
+	}
+}
+
+// BEGIN PORTFOLIO
+.portfolio {
+	background: url(../img/bg_portfolio.jpg) no-repeat center top;
+	
+}
+.portfolio h2 {
+	color: $white;
+	text-align: center;
+	margin: 0;
+	font-family: $font-light;
+	font-size: 3em;
+	padding: 20px auto;
+}
+.portfolio_5,.portfolio_10 {
+	display: flex;
+	flex-flow: row nowrap; 
+	justify-content: center;
+	overflow: hidden;
+
+	& img{
+		margin: 5px;
+		width: 18vw;
+		max-width: 180px;
+	}
+	& img:hover {
+		outline: 2px solid yellow;
+	}
+}
+.contact {
+	position: relative;
+}
+.contacts-data{
+	
+	h4, h2, a{
+		text-align: center;
+		color: $black;
+		text-transform: uppercase;
+		
+	}
+	h4{
+		font-family: $font-bold;
+		font-size: 30px;	
+	}
+	h2{
+		font-family: $font-light;
+		font-size: 48px;
+		font-weight: lighter;
+	}
+	
+}
+.social {
+	text-align: center;
+
+ img {
+	display: inline-block;
+	margin: 0 auto;
+
+	}
+}
+
+.footer {
+	color: $grey;
+	text-align: center;
+	border-top: 1px solid $grey;
+	text-transform: uppercase;
+	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+    
+}
