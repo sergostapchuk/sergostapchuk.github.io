@@ -1,7 +1,12 @@
 body {
 	background-color: #ccc;
+	font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+	
+	text-align: center;
+}
 .photo {
 	display: flex;
 	flex-flow: row nowrap;
@@ -9,4 +14,12 @@ body {
 .photo a{
 	margin: 35px;
 	
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+}
+span {
+	font-weight: 700;
 }
