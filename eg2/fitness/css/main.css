@@ -467,6 +467,10 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+.wrapper {
+  min-width: 1024px;
+}
+
 .section-home {
   background-image: url(../img/home-bg.jpg);
   background-size: cover;
