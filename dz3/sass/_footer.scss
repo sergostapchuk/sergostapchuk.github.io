@@ -1,0 +1,119 @@
+
+.section-footer {
+	background-color: $dark-blue;
+	height: 768px;
+}
+
+.footer-items {
+	display: flex;
+	flex-flow: row nowrap;
+	color: $white;
+
+	p {
+		color: $blue
+	}
+}
+
+.Resources {
+	padding: 50px 10px 0 120px;
+	font-family: $open-sans;
+}
+
+.About-us {
+	padding: 50px 20px 0 20px;
+}
+
+.Stay-in-touch {
+	padding: 50px 120px 0  10px;
+	font-size: $icon-font-size;
+	h5 {
+		font-size: 15px;
+		padding-bottom: 20px;
+	}
+}
+
+.social-icons {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	max-width:250px;
+}
+
+.icons {
+	width: 70px;
+	height: 70px;
+	margin-right: 10px;
+
+}
+
+
+
+.subscribe {
+	display: flex;
+	justify-content: flex-end;
+	padding: 30px 120px 0 0;
+	height: 50px;
+
+	input {
+		padding: 0;
+		border-radius: 3px;
+		margin-right: 15px;
+		height: 49px;
+		border: none;
+	}
+
+	button {
+		color: $white;
+		background-color: $green;
+		font-family: $roboto;
+		font-size: 15px;
+		font-weight: 100;
+		width: 180px;
+		border:none;border-radius: 3px;
+		position: relative;
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			border: 8px solid #fff;
+			border-radius: 50%;
+			position: absolute;
+			right: 0;
+			margin-right: 10px;
+		}
+
+  		&:after {
+  			content:"";
+  			border-style: solid;
+			border-width: 0.25em 0.25em 0 0;
+			display: inline-block;
+			height: 0.45em;
+			position: absolute;
+			top: 44%;
+			right: 0;
+			margin-right: 15px;	
+			transform: rotate(45deg);
+			vertical-align: top;
+			width: 0.45em;
+			color: $green;
+
+			
+			
+
+  		}
+  	}	
+
+}
+
+#name {
+	width: 200px;
+	height: 49px;
+}
+#mail {
+	width: 340px;
+	height: 49px;
+}
+#submit {
+	width: 180px;
+	height: 50px;
+}

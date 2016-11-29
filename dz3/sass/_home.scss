@@ -1,0 +1,102 @@
+.section-home {
+	// position: relative;
+	background-image: url(../img/home-bg.jpg);
+	background-size: cover;
+	background-position: 60% 90%;
+	width: 100%;
+	height:100vh;
+
+}
+
+.section-home__header {
+	margin: auto;
+	position: relative;
+	color: $white;
+	max-width: 1600px;
+
+}
+
+.logo {
+	position: absolute;
+	img {
+		margin:33px 10px 20px 40px;
+		margin-top:33px;
+		width: 30px;
+		height: 47px;
+	}
+
+	a {
+		position: absolute;
+		display: inline-block;
+		font-family: $open-sans;
+		font-weight: 700;
+		letter-spacing: 2px;
+		font-size: 20px;
+		color: $white;
+		margin-top: 20px;
+		border-bottom: 3px solid $green;
+		width: 30px;
+		height: 45px;
+	}
+	a:hover {
+		width: 90px;
+	}
+}
+
+.nav-home  {
+	 display: flex;
+	 justify-content: flex-end;
+
+ 	a {
+ 		padding: 30px 25px;
+ 		color: $white;
+		font-size: 0.9em;
+ 	}
+}
+
+.slogan {
+	color: $white;
+	p {
+		position: absolute;
+		bottom:0;
+		font-size: 30px;
+		font-weight: lighter;
+		padding-bottom: 90px;
+		padding-left: 30px;
+		
+
+		&:after {
+			content: "/";
+			
+			color: $green;
+		}
+	}
+
+	span{
+		position: absolute;
+		bottom:0;
+		font-size: 20px;
+		font-weight: lighter;
+		font-size: 12px;
+		padding-bottom: 100px;
+		padding-left: 165px;
+
+
+		&:after {
+			content: "/";
+
+			color: $orange;
+		}
+	}	
+}
+
+// .head-footer {
+// 	width: 100%;
+// 	position: absolute;
+// 	height: 7rem;
+// 	background-color: rgba(253,99,78,.3);
+// 	bottom: 0;
+// 	margin-top: -5rem;
+// 	transform: rotate(-3deg);
+
+// }

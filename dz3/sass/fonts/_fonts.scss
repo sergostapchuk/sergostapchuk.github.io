@@ -1,0 +1,18 @@
+$montserrat: 'Montserrat', sans-serif;
+
+$open-sans: 'Open Sans', sans-serif;
+
+$roboto: 'Roboto', sans-serif;
+
+$heebo: 'Heebo', sans-serif;
+
+@font-face {
+	font-family:"Songbird-Regular";
+	src:url("../../fonts/Songbird.eot?") format("eot"),
+	url("../../fonts/Songbird.woff") format("woff"),
+	url("../../fonts/Songbird.ttf") format("truetype"),
+	url("../../fonts/Songbird.svg#Songbird-Regular") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+$Songbird:'Songbird-Regular', sans-serif;

@@ -12,8 +12,14 @@
     "autoprefixer": "^6.5.1",
     "browser-sync": "^2.17.5",
     "gulp": "^3.9.1",
+    "gulp-consolidate": "^0.2.0",
+    "gulp-iconfont": "^8.0.1",
     "gulp-postcss": "^6.2.0",
     "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^2.2.0"
+    "gulp-sourcemaps": "^2.2.0",
+    "lodash": "^4.16.6"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.2.4"
   }
 }
